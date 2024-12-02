@@ -1,0 +1,13 @@
+### Get
+GET http://localhost:8000
+
+### Post
+POST http://localhost:8000
+Content-Type: application/json
+
+{
+        "to":"receiver@gmail.com",
+        "subject":"check",
+        "message":"This is simply check"
+
+}
