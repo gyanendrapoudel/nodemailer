@@ -25,7 +25,7 @@ app.get("/",(req,res)=>{
 
 app.post("/",(req,res)=>{
     try {
-        userUpdateTemplate()
+        userUpdateTemplate(req.body)
          res.json({
            status: 'success',
            message: 'response is this',

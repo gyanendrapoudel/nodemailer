@@ -6,7 +6,7 @@ POST http://localhost:8000
 Content-Type: application/json
 
 {
-        "to":"receiver@gmail.com",
+        "to":"gyanen56@gmail.com",
         "subject":"check",
         "message":"This is simply check"
 

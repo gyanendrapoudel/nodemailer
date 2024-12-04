@@ -1,12 +1,12 @@
 import nodemailer from 'nodemailer'
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
+  host: 'smtp.gmail.com',
   port: 587,
   secure: false,
   auth: {
-    user: 'llewellyn48@ethereal.email',
-    pass: 'p7T145bV3ZGm4kMmtS',
+    user: 'pbikash2019@gmail.com',
+    pass: 'hbtjkhqpomlbqtjl',
   },
 })
 
@@ -16,12 +16,12 @@ const emailProcessor = async (templateObj)=> {
 }
 
 
-export const userUpdateTemplate = ()=>{
+export const userUpdateTemplate = ({to,subject,message})=>{
  const obj = {
-   from: '"Maddison Foo Koch 👻" <llewellyn48@ethereal.email>', // sender address
-   to: 'bar@example.com, baz@example.com', // list of receivers
-   subject: 'Hello ✔', // Subject line
-   text: 'Hello world?', // plain text body
+   from: '"Maddison Foo Koch 👻" <pbikash2019@gmail.com>', // sender address
+   to, // list of receivers
+   subject, // Subject line
+   text: message, // plain text body
    html: '<b>Hello world?</b>', // html body
  }
  emailProcessor(obj)
