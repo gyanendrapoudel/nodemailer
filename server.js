@@ -1,4 +1,5 @@
 import express from "express"
+import { userUpdateTemplate } from "./nodemailer.js"
 
 const app = express()
 const PORT = 8000
@@ -24,6 +25,7 @@ app.get("/",(req,res)=>{
 
 app.post("/",(req,res)=>{
     try {
+        userUpdateTemplate()
          res.json({
            status: 'success',
            message: 'response is this',
